@@ -24,7 +24,7 @@ jobs:
       - name: Generate schema
         run: |
           mkdir -p output
-          docker run --rm vector vector generate-schema > output/schema.json
+          docker run --rm vector generate-schema > output/schema.json
       
       - name: Upload pages artifact
         id: deployment
